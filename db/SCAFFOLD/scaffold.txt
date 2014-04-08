@@ -1,0 +1,2 @@
+rails generate scaffold user last_name:string first_name:string passwd:string email:string gender:integer address:string image_url:text
+rails generate scaffold item item_name:string shop:references   

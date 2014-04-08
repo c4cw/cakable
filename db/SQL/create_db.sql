@@ -1,0 +1,2 @@
+CREATE DATABASE c4cw_db CHARACTER SET utf8;
+GRANT ALL ON c4cw_db.* TO c4cw@localhost IDENTIFIED BY 'c4cw';
