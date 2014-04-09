@@ -16,7 +16,17 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+
+#added 2014/04/10
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'execjs'
+gem 'twitter', :git => 'https://github.com/sferik/twitter.git'
+gem 'oauth'
+gem 'configatron'
+gem 'font-awesome-rails'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

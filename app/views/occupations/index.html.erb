@@ -1,0 +1,27 @@
+<h1>Listing occupations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Occupation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @occupations.each do |occupation| %>
+      <tr>
+        <td><%= occupation.occupation %></td>
+        <td><%= link_to 'Show', occupation %></td>
+        <td><%= link_to 'Edit', edit_occupation_path(occupation) %></td>
+        <td><%= link_to 'Destroy', occupation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Occupation', new_occupation_path %>

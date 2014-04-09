@@ -1,0 +1,27 @@
+<h1>Listing cake_categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cake_categories.each do |cake_category| %>
+      <tr>
+        <td><%= cake_category.category_name %></td>
+        <td><%= link_to 'Show', cake_category %></td>
+        <td><%= link_to 'Edit', edit_cake_category_path(cake_category) %></td>
+        <td><%= link_to 'Destroy', cake_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cake category', new_cake_category_path %>

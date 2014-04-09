@@ -1,2 +1,13 @@
-rails generate scaffold user last_name:string first_name:string passwd:string email:string gender:integer address:string image_url:text
+rails generate scaffold target_age_ranges target_age_range:string
+rails generate scaffold genders gender:string
+rails generate scaffold prefectures prefecture:string
+rails generate scaffold area area:string
+rails generate scaffold occupations occupation:string
+rails generate scaffold cake_categorys category_name:string
+
+
+
+
+
+rails generate scaffold target_age_ranges last_name:string first_name:string passwd:string email:string gender:integer address:string image_url:text
 rails generate scaffold item item_name:string shop:references   
