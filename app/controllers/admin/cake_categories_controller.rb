@@ -1,4 +1,10 @@
-class CakeCategoriesController < ApplicationController
+#coding: utf-8
+# Admin::CakeCategoriesController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.04.10
+
+#ケーキカテゴリ管理コントローラ
+class Admin::CakeCategoriesController < ApplicationController
   before_action :set_cake_category, only: [:show, :edit, :update, :destroy]
 
   # GET /cake_categories

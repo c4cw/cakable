@@ -1,4 +1,10 @@
-class TargetAgeRangesController < ApplicationController
+#coding: utf-8
+# Admin::TargetAgeRangesController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.04.10
+
+#対象年齢範囲管理コントローラ
+class Admin::TargetAgeRangesController < ApplicationController
   before_action :set_target_age_range, only: [:show, :edit, :update, :destroy]
 
   # GET /target_age_ranges

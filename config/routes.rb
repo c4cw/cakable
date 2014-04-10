@@ -1,15 +1,14 @@
 C4CW::Application.routes.draw do
-  resources :cake_categories
 
-  resources :occupations
-
-  resources :areas
-
-  resources :prefectures
-
-  resources :genders
-
-  resources :target_age_ranges
+  #Admin
+  namespace :admin do
+    resources :cake_categories
+    resources :occupations
+    resources :areas
+    resources :prefectures
+    resources :genders
+    resources :target_age_ranges
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

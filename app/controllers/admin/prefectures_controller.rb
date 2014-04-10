@@ -1,4 +1,10 @@
-class PrefecturesController < ApplicationController
+#coding: utf-8
+# Admin::PrefecturesController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.04.10
+
+#都道府県管理コントローラ
+class Admin::PrefecturesController < ApplicationController
   before_action :set_prefecture, only: [:show, :edit, :update, :destroy]
 
   # GET /prefectures

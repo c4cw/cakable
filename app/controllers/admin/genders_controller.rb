@@ -1,4 +1,10 @@
-class GendersController < ApplicationController
+#coding: utf-8
+# Admin::GendersController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.04.10
+
+#性別管理コントローラ
+class Admin::GendersController < ApplicationController
   before_action :set_gender, only: [:show, :edit, :update, :destroy]
 
   # GET /genders
