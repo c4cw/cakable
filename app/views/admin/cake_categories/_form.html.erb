@@ -1,4 +1,4 @@
-<%= form_for(@cake_category) do |f| %>
+<%= form_for([:admin, @cake_category]) do |f| %>
   <% if @cake_category.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@cake_category.errors.count, "error") %> prohibited this cake_category from being saved:</h2>

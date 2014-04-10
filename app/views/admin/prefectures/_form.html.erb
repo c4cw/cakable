@@ -1,4 +1,4 @@
-<%= form_for(@prefecture) do |f| %>
+<%= form_for([:admin, @prefecture]) do |f| %>
   <% if @prefecture.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@prefecture.errors.count, "error") %> prohibited this prefecture from being saved:</h2>

@@ -15,7 +15,7 @@
       <tr>
         <td><%= prefecture.prefecture %></td>
         <td><%= link_to 'Show', prefecture %></td>
-        <td><%= link_to 'Edit', edit_prefecture_path(prefecture) %></td>
+        <td><%= link_to 'Edit', edit_admin_prefecture_path(prefecture) %></td>
         <td><%= link_to 'Destroy', prefecture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

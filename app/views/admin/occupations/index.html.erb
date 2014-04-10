@@ -15,7 +15,7 @@
       <tr>
         <td><%= occupation.occupation %></td>
         <td><%= link_to 'Show', occupation %></td>
-        <td><%= link_to 'Edit', edit_occupation_path(occupation) %></td>
+        <td><%= link_to 'Edit', edit_admin_occupation_path(occupation) %></td>
         <td><%= link_to 'Destroy', occupation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
