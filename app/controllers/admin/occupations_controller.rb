@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #職種管理コントローラ
-class Admin::OccupationsController < ApplicationController
+class Admin::OccupationsController < AdminController
   before_action :set_occupation, only: [:show, :edit, :update, :destroy]
 
   # GET /occupations

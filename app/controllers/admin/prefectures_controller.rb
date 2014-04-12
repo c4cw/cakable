@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #都道府県管理コントローラ
-class Admin::PrefecturesController < ApplicationController
+class Admin::PrefecturesController < AdminController
   before_action :set_prefecture, only: [:show, :edit, :update, :destroy]
 
   # GET /prefectures

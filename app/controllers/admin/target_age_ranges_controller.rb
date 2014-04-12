@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #対象年齢範囲管理コントローラ
-class Admin::TargetAgeRangesController < ApplicationController
+class Admin::TargetAgeRangesController < AdminController
   before_action :set_target_age_range, only: [:show, :edit, :update, :destroy]
 
   # GET /target_age_ranges

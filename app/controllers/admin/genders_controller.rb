@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #性別管理コントローラ
-class Admin::GendersController < ApplicationController
+class Admin::GendersController < AdminController
   before_action :set_gender, only: [:show, :edit, :update, :destroy]
 
   # GET /genders

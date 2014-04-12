@@ -1,5 +1,10 @@
 C4CW::Application.routes.draw do
 
+  root 'index#index'
+  
+  #Portal
+  get "index/index"
+  
   #Admin
   namespace :admin do
     resources :cake_categories
@@ -8,6 +13,12 @@ C4CW::Application.routes.draw do
     resources :prefectures
     resources :genders
     resources :target_age_ranges
+    
+    get "authentication/login"
+    get "authentication/auth"
+    get "authentication/logout"
+    get "authentication/signin"
+    
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

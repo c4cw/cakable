@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #ケーキカテゴリ管理コントローラ
-class Admin::CakeCategoriesController < ApplicationController
+class Admin::CakeCategoriesController < AdminController
   before_action :set_cake_category, only: [:show, :edit, :update, :destroy]
 
   # GET /cake_categories

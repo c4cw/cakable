@@ -4,7 +4,7 @@
 # Date:: 2014.04.10
 
 #エリア管理コントローラ
-class Admin::AreasController < ApplicationController
+class Admin::AreasController < AdminController
   before_action :set_area, only: [:show, :edit, :update, :destroy]
 
   # GET /areas
