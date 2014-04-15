@@ -16,7 +16,7 @@ class AdminController < ApplicationController
     if session[:is_login] then
       return      
     else
-      redirect_to admin_login_index_path
+      redirect_to admin_authentication_login_path
     end
   end
 end

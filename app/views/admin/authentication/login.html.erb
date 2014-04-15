@@ -1,16 +1,17 @@
 <div class="container">
 
-	<form class="form-signin" role="form">
-		<h2 class="form-signin-heading">Please sign in</h2>
-		<input type="email" class="form-control" placeholder="Email address" required autofocus>
-		<input type="password" class="form-control" placeholder="Password" required>
-		<label class="checkbox">
-			<input type="checkbox" value="remember-me">
-			Remember me </label>
-		<button class="btn btn-lg btn-primary btn-block" type="submit">
-			Sign in
-		</button>
-	</form>
+	<%= form_tag({:controller => "authentication", :action => "auth"}, {:class=>"form-signin", :role =>"form"} ) do %>
+	<h2 class="form-signin-heading">Please sign in</h2>
+	<%= text_field_tag(:email, nil, :placeholder => "Email address", :class => "form-control", :autofocus => true, :required =>"") %>
+	<%= password_field_tag(:passwd, nil, :placeholder => "Password", :class => "form-control") %>
+	<label class="checkbox">
+		<input type="checkbox" value="remember-me">
+		Remember me </label>
+	<button class="btn btn-lg btn-primary btn-block" type="submit">
+		Sign in
+	</button>
+	<% end %>
 
 </div>
+<!-- /container -->
 

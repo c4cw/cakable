@@ -9,25 +9,30 @@ class Admin::AuthenticationController < ApplicationController
   # ログイン画面表示処理
   #
   def login
-    if session[:is_login] == true then
-      redirect_to admin_authentication_login_path 
-    end
   end
 
   #
   # ログイン認証処理
   #
   def auth
-    passwd = params[:passwd]
-    if passwd == '123' then
-      #ログイン情報セッション登録
+    #ログイン認証処理
       session[:is_login] = true
-      redirect_to admin_gender_index_path 
-    else      
+      redirect_to admin_dashboard_index_path
+=begin
+    member = Member.find_by_email_and_delete_flg(params[:email], 0)
+    if member && member.authenticate(params[:password]) then
+      #ログイン情報セッション登録
+      session[:member_id] = member.id
+      session[:email] = member.email
+      session[:is_login] = true
+      session[:member_name] = member.member_name     
+      redirect_to admin_dashboard_index_path
+    else
       reset_session
-      flash[:msg] = "パスワードが不正です。"
-      redirect_to admin_authentication_login_path 
-    end
+      flash[:msg] = "ログインが不正です。"
+      redirect_to admin_authentication_login_path      
+    end  
+=end    
   end
 
   #

@@ -1,5 +1,6 @@
 C4CW::Application.routes.draw do
 
+
   root 'index#index'
   
   #Portal
@@ -15,10 +16,10 @@ C4CW::Application.routes.draw do
     resources :target_age_ranges
     
     get "authentication/login"
-    get "authentication/auth"
+    post "authentication/auth"
     get "authentication/logout"
     get "authentication/signin"
-    
+    get "dashboard/index"    
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
